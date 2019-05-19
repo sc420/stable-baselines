@@ -96,6 +96,12 @@ with a budget of 1000 trials and a maximum of 50000 steps:
     --sampler random --pruner median
 
 
+Colab Notebook: Try it Online!
+------------------------------
+
+You can train agents online using Google `colab notebook <https://colab.research.google.com/drive/1cPGK3XrCqEs3QLqiijsfib9OFht3kObX>`_.
+
+
 .. note::
 
 	You can find more information about the rl baselines zoo in the repo `README <https://github.com/araffin/rl-baselines-zoo>`_. For instance, how to record a video of a trained agent.
