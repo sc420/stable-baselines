@@ -239,7 +239,7 @@ class A2C(ActorCriticRLModel):
                 obs, states, rewards, masks, actions, values, ep_infos, true_reward = runner.run()
                 ep_info_buf.extend(ep_infos)
                 _, value_loss, policy_entropy = self._train_step(obs, states, rewards, masks, actions, values,
-                                                                 update - 1, writer)
+                                                                 self.num_timesteps // self.n_batch, writer)
                 n_seconds = time.time() - t_start
                 fps = int((update * self.n_batch) / n_seconds)
 
